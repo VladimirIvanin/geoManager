@@ -9,4 +9,9 @@ var myGeo = new GeoManager({
  },
  debug: true
 });
+
+// если нужно сохранить своё значение
+myGeo.setLocalData({city: 'Мой город'}, function () {
+  console.log('Данные обновлены');
+})
 ```
