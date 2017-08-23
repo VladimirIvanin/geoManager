@@ -164,6 +164,7 @@ GeoManager.prototype.setLocalData = function (newLocals, _setCallback) {
       if (newlocalData) {
         self.setLog('В хранилище обновлены данные через метод setLocalData', newlocalData);
         setCallback(newlocalData);
+        self.option.succes(newlocalData);
       }else{
         self.setLog('Не удалось обновить данные');
       }
